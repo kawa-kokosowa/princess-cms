@@ -1,0 +1,25 @@
+<form action="/index.py" method="POST">
+  <input type="hidden" name="article_id" id="article_id"
+         value="{{article_id}}">
+
+  <h1 id="article-title">
+    <a href="/index.py?view={{article_id}}" class="editable"
+       name="title" id="title">{{title}}</a>
+  </h1>
+
+  <ul id="article-links" class="links">
+    <li>
+     <a href="/index.py?view={{article_id}}" target="_new">edit/view</a>
+    </li>
+    <li>
+     <input type="submit" value="replicate" name="replicate">
+    </li>
+    <li>
+     <input type="submit" value="delete" name="delete" id="delete">
+    </li>
+    <li><input type="submit" value="save" name="save"></li>
+  </ul>
+
+  <aside class="editable" name="tags" id="tags">{{tags}}</aside>
+  <section name="body" id="body" class="editable">{{body}}</section>
+</form>

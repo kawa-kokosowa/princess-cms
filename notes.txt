@@ -1,0 +1,39 @@
+asset management (uploads)
+better search -- do something with tags?
+
+Content Versioning
+creates versions of content and includes a diff view to see the differences
+between them. 
+
+Flexible User Permissions
+nearly 70% of respondents think this is very important. So does Magnolia, of
+course, which not only allows you to create ACL's Groups and Roles but als
+supports external authorization and authentication via LDAP and NTLM. All
+content in Magnolia is stored in a JCR-170 repository, which means all content
+is protected through access control.
+
+Open API
+http://en.wikipedia.org/wiki/Open_API
+
+Search Engine Optimization
+Magnolia and especially its best-practise Templating Kit (STK) got this aspect
+covered extensively, starting from friendly URLs to support for the Sitemap
+protocol. We even have written a 30-page Magnolia SEO tech brief describing how
+to apply search engine optimization (SEO) to enterprise websites by employing
+best practices together with the built-in tools in Magnolia CMS.
+
+Social Media Integration – provided via Frisbee, a Magnolia module that provides
+
+    Google Map (v3) integration (single and multiple markers)
+    Flickr Slideshow, with custom query builder (tags, full-text search, author based search..)
+    Facebook integration (SDK, iLike, meta tags, reading values from page properties)
+    ShareThis and AddThis integration
+    Twitter integration (last tweets, tweet this, retweet)
+
+Multi-Lingual Support
+
+backups
+periodical, sql backup of database--or just .db/.sqlite format... site
+backup--just use "snapshots?"
+
+article modification, creation date!

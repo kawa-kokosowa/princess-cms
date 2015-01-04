@@ -1,0 +1,29 @@
+<script type="text/javascript" src="/resource/tinymce/tinymce.min.js">
+</script>
+<script type="text/javascript">
+tinymce.init({
+  selector: "h1 a.editable",
+  inline: true,
+  toolbar: "undo redo",
+  menubar: false
+});
+
+tinymce.init({
+  selector: "#tags.editable",
+  inline: true,
+  toolbar: "undo redo",
+  menubar: false
+});
+
+tinymce.init({
+  selector: "section.editable",
+  inline: true,
+  plugins: [
+    "advlist autolink lists link image charmap print preview anchor",
+    "searchreplace visualblocks code fullscreen",
+    "insertdatetime media table paste"
+  ],
+  menubar: false,
+  toolbar: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image | code"
+});
+</script>

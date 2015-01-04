@@ -1,0 +1,33 @@
+<p><strong>Warning</strong> Proceeding will wipe the old database!</p>
+
+<p>Here's what will happen:</p>
+
+<ul>
+  <li>Tables which PCMS wants to setup are dropped!</li>
+  <li>Create the tables for PCMS.</li>
+  <li>Use the specified user information to create such a user with the role
+      <em>root</em>.</li>
+</ul>
+
+<form method="POST" action="/index.py">
+  <fieldset class="form">
+    <legend>Administrator Account</legend>
+
+    <p>Use the following form to setup your administrator account,
+    which has complete control over your installation.</p>
+
+    <label for="username">Username:</label>
+    <input name="username" id="username" type="text">
+
+    <label for="password">Password:</label>
+    <input name="password" id="password" type="password">
+
+    <label for="comment">Comment:</label>
+    <textarea name="comment" id="comment"></textarea>
+
+    <label for="email">Email:</label>
+    <input name="email" id="email" type="text">
+
+    <button type="submit" value="yes" name="install">Install/Reset</button>
+  </fieldset>
+</form>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!-- this will eventually be strictly a part of the blog include package...
+-->
+<html>
+<head>
+  <title>{{title}}</title>
+  <link rel="stylesheet" type="text/css" href="/resource/style.css">
+</head>
+<body>
+
+<div id="container-mast">
+  <header id="mast" class="center">
+    <h1 id="mast-title"><a href="/index.py?list=1">Princess CMS</a></h1>
+
+    [[blog navigation.html]]
+
+    <form action="/index.py" method="POST">
+      <input id="mast-search" name="search" placeholder="search archive">
+    </form>
+
+  </header>
+</div>
+
+<div id="container-page">
+
+  <section id="page" class="center">
+
+    [[blog sidebar.html]]
+
+    <section id="list">
+

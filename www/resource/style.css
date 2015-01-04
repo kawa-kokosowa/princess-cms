@@ -1,0 +1,381 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+html, body {
+  background: #fff;
+  font: 24px/1.5rem "Open Sans", sans-serif;
+  height: 100%;
+}
+
+body {
+  padding-top: 3.75rem;
+}
+
+a,
+a:link,
+a:visited,
+input[type="submit"],
+button {
+  color: #ff2b7d;
+  text-decoration: none;
+}
+
+input[type="submit"],
+button {
+  font: 24px/1.5rem "Open Sans", sans-serif;
+  border: none;
+  background: #fff;
+  cursor: pointer;
+}
+
+a:hover,
+input[type="submit"]:hover,
+button:hover {
+  text-decoration: underline;
+}
+
+/* general practices */
+
+ul.links {
+  /* a list of links, like with navigation */
+  list-style-type: none;
+}
+
+ul.links li {
+  float: left;
+  display: block;
+}
+
+.center {
+  width: 960px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.float-fix {
+  clear: both;
+  width: 100%;
+  height: 3rem;
+}
+
+.paginate {
+  float: left;
+  padding: 1.5rem 0;
+  width: 100%;
+}
+
+.paginate:last-child {
+  padding-bottom: 0;
+}
+
+.paginate li {
+  display: block;
+  width: 60px;
+  text-align: left;
+}
+
+/* mast */
+
+#container-mast {
+  background: #ff2b7d;
+  color: #fff;
+  height: 3.75rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+#mast {
+  padding-top: 1.5rem;
+  padding-bottom: 0.75rem;
+  height: 3.75rem;
+}
+
+#mast a {
+  color: #fff !important;
+}
+
+#mast-title {
+  font-size: 1.5rem;
+  float: left;
+  text-transform: uppercase;
+}
+
+#mast-nav {
+  float: left;
+  display: block;
+  margin-left: 40px;
+}
+
+#mast-links {
+  font-size: 1rem;
+}
+
+#mast-links li + li {
+  padding-left: 10px;
+}
+
+#mast-search {
+  width: 220px;
+  float: right;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  border: none;
+  padding: 0 10px;
+}
+
+/* page: contains actual site content */
+
+*[id*="container-"] {}
+
+#container-page {
+  box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  min-height: 100%;
+  margin-top: -8.25rem;
+  padding-top: 2.25rem;
+  padding-bottom: 6rem;
+}
+
+#page {
+  margin-top: 8.25rem;
+  background: #fff;
+}
+
+/* sidebar: floats to the right of article */
+
+#sidebar {
+  float: right;
+  width: 220px;
+}
+
+#sidebar h1 {
+  font-size: 1rem;
+  color: #5e5e5e;
+}
+
+#sidebar ul {
+  font-size: 0.75rem;
+  margin: 0 0 1.5rem 40px;
+}
+
+/* article: reserved for actual blog articles */
+
+#article,
+#list {
+  width: 680px;
+  float: left;
+}
+
+#article-links {
+  margin: 0 !important;
+}
+
+#article-links li {
+  /* the default ul li + li has a margin-top of 1.5rem */
+  margin-top: 0 !important;
+}
+
+#article-links li + li {
+  margin-left: 20px;
+}
+
+#article-links li:last-child {
+  float: right;
+}
+
+#article-title,
+#list-title {
+  font-size: 3rem;
+  line-height: 3rem;
+}
+
+#tags,
+.tags {
+  clear: both;
+  display: block;
+  padding: 0 0 1.5rem 0;
+  color: #5e5e5e;
+  font-size: 0.825rem;
+}
+
+#article-footer {
+  clear: both;
+  margin: 1.5rem 0;
+  color: #5e5e5e;
+  font-size: 0.75rem;
+}
+
+#article-footer dt {
+  font-weight: bold;
+}
+
+#article-footer dt,
+#article-footer dd {
+  display: block;
+  float: left;
+  padding-right: 10px;
+}
+
+#article p,
+#list p {
+  min-width: 25em;
+  max-width: 33em;
+  word-wrap: break-word;
+}
+
+#article p + p {
+  margin-top: 1.5rem;
+}
+
+#article ul {
+  margin: 1.5rem 20px 1.5rem 40px;
+}
+
+#article li {
+  margin-top: 1.5rem;
+}
+
+/* form controls
+ * Primarily used for in-page forms, whereas the form is the primary content.
+ *
+ * I use .form for fieldsets.
+ */
+
+.form {
+  margin: 1.5rem 0;
+  padding-top: 1.5rem;
+  border: none;
+  border-top: 0.75rem solid #ff2b7d;
+}
+
+.form legend {
+  padding-right: 10px;
+  color: #ff2b7d;
+  font-weight: bold;
+}
+
+.form p {
+  margin-bottom: 1.5rem;
+}
+
+.form label,
+.form input,
+.form textarea {
+  width: 340px;
+  display: block;
+  float: left;
+  min-height: 1.5rem;
+  border: 1px dashed #5e5e5e;
+  margin-bottom: 1.5rem;
+}
+
+.form input:focus,
+.form textarea:focus {
+  border: 1px dashed #ff2b7d;
+}
+
+.form input,
+.form textarea {
+  font: 0.75rem "Open Sans", sans-serif;
+  background: #f9f9f9;
+}
+
+.form input {
+  padding: 0 10px;
+}
+
+.form label {
+  border: none;
+  clear: left;
+}
+
+.form textarea {
+  min-height: 4.5rem;
+}
+
+.editable:hover {
+  background: #f9f9f9;
+}
+
+input[type=text] {
+  
+}
+
+/* article list */
+
+#list .tags {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  font-size: 0.75rem;
+}
+
+#list .tags li {
+  display: inline;
+}
+
+#list .tags li + li:before {
+  content: "\002C";
+  padding-right: 0.3rem;
+}
+
+hr {
+  height: 1.5rem;
+  border: none;
+}
+
+.list-title {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+/* footer */
+
+#container-footer {
+  position: absolute;
+  height: 6rem;
+  width: 100%;
+  background: #5e5e5e;
+  margin-top: -6rem;
+
+}
+
+#footer {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  color: #fff;
+}
+
+/* user */
+
+dl.user-info {
+  /* information about a user; <dl> */
+  word-wrap: break-word;
+}
+
+dl.user-info dt {
+  font-weight: bold;
+}
+
+dl.user-info dd + dt {
+  margin-top: 1.5rem;
+}
+
+/* errors and such */
+
+.technical {
+  /* information block that helps the developers, confuses the user
+   * typically follows a user-friendly message
+   */
+  margin-top: 1.5rem;
+}
